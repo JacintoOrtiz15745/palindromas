@@ -19,9 +19,29 @@
     <center>
     <div class="form-group mt-4 col-lg-4">
       <label for="exampleInputEmail1">Put your text here</label>
-      <input class="form-control" id="calificacion" aria-describedby="emailHelp" placeholder="Put your text here">
+      <input class="form-control inputPalindromas" id="calificacion" aria-describedby="emailHelp" placeholder="Put your text here">
     </div>
-    <button type="button" class="btn btn-primary">Send</button>
+    <button type="button" class="btn btn-primary" onclick="dividirCadena()">Send</button>
     </center>
   </body>
+
+
+  <div class="container mt-4">
+    <div class="card">
+      <div class="card-body">
+        <div class="table">
+          <center>
+            <table id="new">
+              <thead>
+                <tr>
+                  <th scope="col">Palabra</th>
+                  <th scope="col">Palindroma</th>
+                </tr>
+              </thead>
+            </table>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
 </html>
