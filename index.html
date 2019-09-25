@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script type="text/javascript" src="javascript.js"></script>
   </head>
-  <body>
+  <body onload = "reloj()">
     <nav class="navbar navbar-expand-md navbar-light bg-dark" id="nav">
       <div class="container my-4">
         <a href="#" class="navbar-brand text-white">UCOL</a>
@@ -16,32 +16,39 @@
         </button>
       </div>
     </nav>
+
     <center>
+      <div class="card mt-4 col-lg-2">
+        <div class="card-body">
+          <div class="h2" id="print"></div>
+        </div>
+      </div>
+
     <div class="form-group mt-4 col-lg-4">
       <label for="exampleInputEmail1">Put your text here</label>
-      <input class="form-control inputPalindromas" id="calificacion" aria-describedby="emailHelp" placeholder="Put your text here">
+      <input class="form-control inputPalindromas" aria-describedby="emailHelp" placeholder="Put your text here">
     </div>
     <button type="button" class="btn btn-primary" onclick="dividirCadena()">Send</button>
     </center>
-  </body>
 
-
-  <div class="container mt-4">
-    <div class="card">
-      <div class="card-body">
-        <div class="table">
-          <center>
-            <table id="new">
-              <thead>
-                <tr>
-                  <th scope="col">Palabra</th>
-                  <th scope="col">Palindroma</th>
-                </tr>
-              </thead>
-            </table>
-          </center>
+      <div class="container mt-4 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="table">
+              <center>
+                <table id="new">
+                  <thead>
+                    <tr>
+                      <th scope="col">Palabra</th>
+                      <th scope="col">Palabra revertida</th>
+                      <th scope="col">Palindroma</th>
+                    </tr>
+                  </thead>
+                </table>
+              </center>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+  </body>
 </html>
