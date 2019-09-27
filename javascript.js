@@ -7,20 +7,23 @@ function reloj(){
   document.getElementById('print').innerHTML =  hora + ':' + min + ':' + seg
 }
 
+var cont = 0
+
 function dividirCadena(){
+
   var input = document.getElementsByClassName('inputPalindromas')[0].value
   var inputSeparar = input.split(" ")
 
   var inputReverse = document.getElementsByClassName('inputPalindromas')[0].value
   var inputSepararReverse = inputReverse.split("").reverse("").join("")
+  var junto = new Array()
+  junto.push(inputSepararReverse) 
 
-  for(var i = 0; i < inputSeparar.length; i++){
-    if(inputSeparar.every == inputSepararReverse.every)
-    {
-      document.getElementById('new').insertRow(-1).innerHTML = '<tr><td>' + inputSeparar[i] + '</td><td>' + inputSepararReverse + '</td><td>' + si + '</td></tr>'
-
-    } else{
-      document.getElementById('new').insertRow(-1).innerHTML = '<tr><td>' + inputSeparar[i] + '</td><td>' + inputSepararReverse + '</td></tr>'
+  for(var i = cont; i <= inputSeparar.length - 1; i++){
+    if(inputSeparar[cont] == junto[cont]){
+      document.getElementById('new').insertRow(-1).innerHTML = '<tr><td>' + inputSeparar + '</td><td>' + inputSepararReverse + '</td><td>' + '<i class="fa fa-check" aria-hidden="true"></i>' + '</td></tr>'
+    } else if(inputSeparar[cont] != junto[cont]){
+      document.getElementById('new').insertRow(-1).innerHTML = '<tr><td>' + inputSeparar + '</td><td>' + inputSepararReverse + '</td><td></td></tr>'
     }
   }
 }

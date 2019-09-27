@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script type="text/javascript" src="javascript.js"></script>
   </head>
   <body onload = "reloj()">
@@ -26,7 +27,7 @@
 
     <div class="form-group mt-4 col-lg-4">
       <label for="exampleInputEmail1">Put your text here</label>
-      <input class="form-control inputPalindromas" aria-describedby="emailHelp" placeholder="Put your text here">
+      <input class="form-control inputPalindromas" aria-describedby="emailHelp" placeholder="Put your text here (just one)">
     </div>
     <button type="button" class="btn btn-primary" onclick="dividirCadena()">Send</button>
     </center>
@@ -39,9 +40,9 @@
                 <table id="new">
                   <thead>
                     <tr>
-                      <th scope="col">Palabra</th>
-                      <th scope="col">Palabra revertida</th>
-                      <th scope="col">Palindroma</th>
+                      <th scope="col">Word</th>
+                      <th scope="col">Reversed word</th>
+                      <th scope="col">Palindrome</th>
                     </tr>
                   </thead>
                 </table>
